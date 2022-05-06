@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Font Face</title>
+    <title>Font Formats</title>
     <style type="text/css">
     @font-face{
         font-family:'ChunkFiveRegular';
-        src: url('fonts/chunkfive.eot')
+        src: url('fonts/chunkfive.eot');
+        src: url('fonts/chunkfive.eot#iefix') format('embedded-opentype'),
+             url('fonts/chunkfive.woff') format('woff'),
+             url('fonts/chunkfive.ttf') format('trutype'),
+             url('fonts/chunkfive.svg#ChunkFiveRegular') format('svg')
 
     }
     h1, h2{
         font-family: ChunkFiveRegular, Georgia, serif;
-        font-size:400%;
+       
     }
  
 </style>
